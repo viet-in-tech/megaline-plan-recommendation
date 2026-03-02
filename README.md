@@ -3,6 +3,8 @@
 
 **TripleTen Data Science Program · Sprint 8 — Introduction to Machine Learning**
 
+**Completed:** December 15, 2025
+
 ---
 
 ## Project Overview
