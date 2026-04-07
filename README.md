@@ -1,4 +1,6 @@
 # Mobile Plan Recommendation Engine
+
+![Demo](https://viet-in-tech.github.io/mobile-plan-demo.gif)
 ### Megaline Telecom — Plan Classification Model
 
 **TripleTen Data Science Program · Sprint 8 — Introduction to Machine Learning**
