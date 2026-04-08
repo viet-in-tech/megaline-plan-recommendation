@@ -3,6 +3,8 @@
 ![Demo](https://viet-in-tech.github.io/mobile-plan-demo.gif)
 ### Megaline Telecom — Plan Classification Model
 
+**Portfolio write-up:** [Recommending the Right Plan: Machine Learning for Mobile Carriers](https://viet-in-tech.github.io/megaline-plan-recommendation.html)
+
 **TripleTen Data Science Program · Sprint 8 — Introduction to Machine Learning**
 
 **Completed:** December 15, 2025
@@ -27,12 +29,12 @@ Megaline, a mobile carrier, wants to move customers off legacy plans and onto on
 
 **Features:**
 
-| Feature   | Description                         |
-|-----------|-------------------------------------|
-| calls     | Number of calls made per month      |
-| minutes   | Total call duration (minutes)       |
-| messages  | Number of text messages             |
-| mb_used   | Internet traffic used (MB)          |
+| Feature | Description |
+|---------|-------------|
+| calls | Number of calls made per month |
+| minutes | Total call duration (minutes) |
+| messages | Number of text messages |
+| mb_used | Internet traffic used (MB) |
 
 ---
 
@@ -57,12 +59,12 @@ Megaline, a mobile carrier, wants to move customers off legacy plans and onto on
 
 **Validation Results:**
 
-| Model                       | Dataset    | Accuracy | Precision | Recall | F1    |
-|-----------------------------|------------|----------|-----------|--------|-------|
-| Decision Tree (Baseline)    | Validation | 76.5%    | 67.8%     | 40.6%  | 50.8% |
-| Random Forest (100 trees)   | Validation | 79.5%    | 71.4%     | 52.1%  | 60.2% |
-| Decision Tree (Tuned)       | Validation | 76.5%    | 64.5%     | 47.4%  | 54.7% |
-| Random Forest (10,000 trees)| Validation | 79.9%    | 73.7%     | 51.0%  | 60.3% |
+| Model | Dataset | Accuracy | Precision | Recall | F1 |
+|---|---|---|---|---|---|
+| Decision Tree (Baseline) | Validation | 76.5% | 67.8% | 40.6% | 50.8% |
+| Random Forest (100 trees) | Validation | 79.5% | 71.4% | 52.1% | 60.2% |
+| Decision Tree (Tuned) | Validation | 76.5% | 64.5% | 47.4% | 54.7% |
+| Random Forest (10,000 trees) | Validation | 79.9% | 73.7% | 51.0% | 60.3% |
 
 ### Phase 5 — Final Test Evaluation
 
@@ -72,12 +74,12 @@ Selected model: **Random Forest (10,000 trees, max_depth=10)**
 
 ## Final Test Results
 
-| Metric    | Score  |
-|-----------|--------|
-| Accuracy  | 81.8%  |
-| Precision | 77.5%  |
-| Recall    | 53.2%  |
-| F1 Score  | 63.1%  |
+| Metric | Score |
+|--------|-------|
+| Accuracy | 81.8% |
+| Precision | 77.5% |
+| Recall | 53.2% |
+| F1 Score | 63.1% |
 
 **Target Accuracy ≥ 75% → PASSED** (margin: +6.8%)
 
@@ -88,7 +90,7 @@ Selected model: **Random Forest (10,000 trees, max_depth=10)**
 For this project, **accuracy and precision** are the most relevant metrics:
 
 - **Accuracy:** "How often does the model recommend the right plan across all customers?"
-- **Precision:** "When the model recommends Ultra, how often is that correct — how much can a customer trust the recommendation?"
+- **Precision:** "When the model recommends Ultra, how often is that correct?"
 
 Missing an Ultra recommendation is not catastrophic — a customer can upgrade later. This makes recall less critical, and therefore F1 less relevant, for this specific business case.
 
